@@ -47,11 +47,25 @@ namespace GuessingGameTemplate4U
                 Thread.Sleep(1000);
 
                 //TODO close this screen and open a Results Screen (you need to create this)
+                Form f = this.FindForm();
 
+                f.Controls.Remove(this);
+
+                // Create an instance of the SecondScreen 
+
+                inputBox.Text = "";
+                inputBox.Focus();
+                Results ss = new Results();
+                this.Controls.Add(ss);
+
+
+
+                // Add the User Control to the Form 
+
+                f.Controls.Add(ss);
             }
 
-            inputBox.Text = "";
-            inputBox.Focus();
+          
         }
 
     }

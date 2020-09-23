@@ -15,10 +15,15 @@ using System.Windows.Forms;
 
 namespace GuessingGameTemplate4U
 {
+    /* 
+     * Jayden Roddick 
+     * Guessing Game 
+     * 09/22/20
+     */
     public partial class Form1 : Form
     {
         //TODO create global list to store user guesses
-
+        public static List<int> guesses = new List<int>(); 
         public Form1()
         {
             InitializeComponent();
