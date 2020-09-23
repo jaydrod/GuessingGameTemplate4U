@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.resultslable = new System.Windows.Forms.Label();
             this.results2lable = new System.Windows.Forms.Label();
+            this.label3results = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +48,7 @@
             this.resultslable.AutoSize = true;
             this.resultslable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultslable.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.resultslable.Location = new System.Drawing.Point(59, 0);
+            this.resultslable.Location = new System.Drawing.Point(84, 0);
             this.resultslable.Name = "resultslable";
             this.resultslable.Size = new System.Drawing.Size(90, 25);
             this.resultslable.TabIndex = 1;
@@ -55,22 +56,33 @@
             // 
             // results2lable
             // 
+            this.results2lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.results2lable.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.results2lable.Location = new System.Drawing.Point(4, 39);
+            this.results2lable.Location = new System.Drawing.Point(4, 35);
             this.results2lable.Name = "results2lable";
-            this.results2lable.Size = new System.Drawing.Size(216, 185);
+            this.results2lable.Size = new System.Drawing.Size(278, 126);
             this.results2lable.TabIndex = 2;
+            // 
+            // label3results
+            // 
+            this.label3results.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3results.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label3results.Location = new System.Drawing.Point(4, 178);
+            this.label3results.Name = "label3results";
+            this.label3results.Size = new System.Drawing.Size(289, 135);
+            this.label3results.TabIndex = 3;
             // 
             // Results
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Controls.Add(this.label3results);
             this.Controls.Add(this.results2lable);
             this.Controls.Add(this.resultslable);
             this.Controls.Add(this.label1);
             this.Name = "Results";
-            this.Size = new System.Drawing.Size(223, 224);
+            this.Size = new System.Drawing.Size(296, 327);
             this.Load += new System.EventHandler(this.Results_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -82,5 +94,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label resultslable;
         private System.Windows.Forms.Label results2lable;
+        private System.Windows.Forms.Label label3results;
     }
 }

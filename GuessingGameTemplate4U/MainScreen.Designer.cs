@@ -97,7 +97,7 @@
             this.Controls.Add(this.promptLabel);
             this.Controls.Add(this.titleLabel);
             this.Name = "MainScreen";
-            this.Size = new System.Drawing.Size(300, 300);
+            this.Size = new System.Drawing.Size(367, 416);
             this.ResumeLayout(false);
             this.PerformLayout();
 

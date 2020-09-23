@@ -19,11 +19,19 @@ namespace GuessingGameTemplate4U
 
         private void Results_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i <Form1.guesses.Count(); i++)
+            for (int i = 0; i < Form1.guesses.Count(); i++)
 
             {
 
-               results2lable.Text += "\n" + i + ": " + (i);
+               results2lable.Text +=  Form1.guesses[i] + " ";
+
+            }
+            Form1.guesses.Sort();
+            for (int i = 0; i < Form1.guesses.Count(); i++)
+
+            {
+
+                label3results.Text += Form1.guesses[i] + " ";
 
             }
         }

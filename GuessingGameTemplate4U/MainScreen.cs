@@ -30,6 +30,7 @@ namespace GuessingGameTemplate4U
             int guess = Convert.ToInt16(inputBox.Text);
 
             //TODO add guess to List of guesses on Form1
+            Form1.guesses.Add(guess); 
 
 
             if (guess < rand)
